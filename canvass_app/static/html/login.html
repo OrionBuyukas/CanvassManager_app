@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Lead Management App</title>
+    <script src="/js/login.js" type="text/javascript"></script>
+     <link href="/css/login.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="intro">
+    <button id="loginBtn" onclick="showHide('login')"></button>
+    <button id="loginBtn" onclick="showHide('createUser')"></button>
+
+</div>
+
+<div id="login">
+    <form action="/login/" method="POST">
+    Username: <input type="text" name="username">
+   Password: <input type="password" name="password" >
+    <input type="submit">
+    </form>
+
+</div>
+
+
+<div id="createUser">
+{#<form id="registerUser">#}
+
+    Role:
+    <select id="role">
+      <option value="canvasser">Canvasser</option>
+      <option value="salesPerson">Salesperson</option>
+      <option value="manager">Manager</option>
+    </select>
+    <br>
+    Username:
+    <br>
+    <input type="text" name="username" id="username"  placeholder="Enter username"><label id="usernm"></label>
+    <br>
+    Password:
+    <br>
+    <input name="password" type="password" id="password" placeholder="Enter password"><label id="pass"></label>
+    <br>
+    Reenter Password:
+    <br>
+    <input name="password" type="password" id="reenterpassword" placeholder="Reenter password"><label id="repass"></label>
+    <br>
+    First Name:
+    <br>
+    <input type="text" name="first_name" placeholder="Enter first name"><label id="fnInvalid"></label>
+    <br>
+    Last Name:
+    <br>
+    <input type="text" name="last_name" placeholder="Enter last name"><label id="lnInvalid"></label>
+    <br>
+    Email:
+    <br>
+    <input type="email" name="email" placeholder="Enter email"><label id="emailInvalid"></label>
+    <br>
+
+
+{#    <input type="submit" id="submitUser">#}
+    <button name="createUser" id="createUserBtn" onclick="createUser()">Register</button>
+{#</form>#}
+</div>
+
+
+</body>
+</html>

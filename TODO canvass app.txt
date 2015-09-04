@@ -1,0 +1,86 @@
+Transparancy, goal setting, and stat monitoring is critical for keeping lead generation and sales teams motivated and focused.
+the less time worrying about the status of leads, when sales calls are going.
+
+also information is critical to generating sales and preparing sales team members for what to expect
+
+
+1. Draw what the 4 views/templates will look like
+
+2. CREATE MODELS:
+
+	Users:
+		Manager
+			"can track all stats, change bonus structure"
+			"can assign leads to salespeople"
+
+		Salesperson
+			"can view stats, leads"
+			"can sort leads by location, status"
+
+		CanvassManager
+			"can view status of all leads"
+			"can reply to objections heard"
+			"can view canvasser locations"
+			"can view canvasser stats"
+			"can add/edit practice pitches"
+				
+
+		Canvasser
+			"has stats, can track stats and status on leads(whether confirmed, whether demoed, salesperson dispostions)
+			"has location for easy pick up"
+			"can edit practice pitches
+
+	objects:
+		Leads-
+			status = revisit/callback, dead, sold, unvisited/demoed
+			 
+			appointment date/time
+			Address
+			Bid
+
+			photo of house?
+
+
+		Sales - leads/bids have gone to sale, used to schedule crews		
+
+		TRAINING Tools
+		Objections
+		Rebuttals
+		Practice Pitches
+
+	Bonus - can be changed as manager
+
+2.1 ---Register models in admin
+2.2 ---create superuser
+
+3. create register/login page --use ajax, or django templates. decide if I want to make 4 templates, or one view with 4 different displays
+
+
+4. description of views:
+
+	canvasser:
+		
+		can submit leads
+		can submit objections
+		can edit
+
+		goals - base stats goals, bonus goals, charts and shows percent of goal distance to goal and progress
+		has stats:
+			--bonus total ((projected for the day)/(confirmed for the day)/weekly/monthly
+
+
+
+
+			--all stats viewable daily/weekly/
+			-leads
+			-confirmed leads
+			-sales
+			
+
+future abilities:
+	can track objections and progress through houses in an area
+
+	was home, denied-reason (rental, objection, return later)
+	was not home - apparently needs work/doesn't need work
+	neighborhood saturation stat
+

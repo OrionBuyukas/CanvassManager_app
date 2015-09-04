@@ -1,0 +1,12 @@
+/*do add class on init*/
+.canvassView {
+    background-color: green;
+}
+
+.salesView {
+    background-color: red;
+}
+
+.managerView {
+    background-color: blue;
+}
